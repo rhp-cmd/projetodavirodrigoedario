@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Alvorada Supermercados</title>
+
+    <section class="header">
+      <img class="perfil" src="images/LOGO_ALVORADA.png" width="10%"/>
+      <h1 class="titulo" style="font-size: 18px;">ALVORADA Supermercados</h1>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+              <span class="navbar-text">
+              <button class="btn" style="color: white;">HOME</button>
+              <button class="btn" style="color: white;">SOBRE</button>
+              <button class="btn" style="color: white;">CONTATO</button>
+            </span>
+          </div>
+      </nav>
+    </section>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+    <section class="cadastro">
+    <form nome="form-func" method="get">
+      <h1 style="font-size: 22px;">CADASTRO DE PRODUTOS</h1>
+      <legend style="font-size: 18px;">
+        Utilize o Formulário abaixo para cadastrar os produtos<br>disponíveis em estoque, de acordo com o tipo de produto<br>
+      </legend>
+      <br/>
+      <label>Tipo de Produto:</label><br>
+      <select value="Marca" required id="Marca do veiculo">
+        <option value>Selecione o tipo...</option>
+        <option value="Laticinios">Laticínios</option>
+        <option value="Carnes">Carnes e Aves</option>
+        <option value="Enlatados">Enlatados</option>
+        <option value="Hortifruti">Hortifruti</option>
+        <option value="Congelados">Congelados</option>
+        <option value="Limpeza">Limpeza e Higiene</option>
+      </select>
+      <br />
+      <label>Nome do Produto:</label><br>
+      <input type="text" required id="modelo do veiculo" placeholder="Insira o nome do produto" />
+      <br />
+      <label>Foi dado entrada na Nota Fiscal?:</label><br>
+      <input type="checkbox" id="stock" />
+      <br /><br>
+      <label>Data da Compra:</label><br>
+      <input type="date" required id="data de importação" />
+      <br />
+      <label>Item de Cesta Básica?:</label><br>
+      <input type="radio" name="Cockpit" value="Esquerdo" /> SIM
+      <input type="radio" name="Cockpit" value="Direito" /> NÃO
+      <br /><br>
+      <label>Quantidade em Estoque:</label><br>
+      <input type="number" id="ano de fabricação" placeholder="Insira a quantidade em estoque"/>
+      <br />
+      <input type="submit" value="Cadastrar" id="Cadastrar"  style="color: white;"/>
+      <input type="reset" value= " Limpar  " id="Limpar" />
+      <br>
+      <br>
+      </section>
+ 
+    </form>
+    </div>
+    <div class="col-md-6">
+        <section class="tabela">
+        <h2 style="text-align: center; color: black;">LISTAGEM DOS PRODUTOS</h2>
+    <table class="table table-border">
+        <thead>
+            <tr class="bg-success">
+                <th style="text-align: center; color: white;"> Tipo de Produto</th>
+                <th style="text-align: center; color: white;"> Nome do Produto</th>
+                <th style="text-align: center; color: white;"> Foi dado Entrada na Nota Fiscal?</th>
+                <th style="text-align: center; color: white;"> Data da Compra</th>
+                <th style="text-align: center; color: white;"> Item de Cesta Básica?</th>
+                <th style="text-align: center; color: white;"> Quantidade em Estoque</th>
+                <th style="text-align: center; color: white;"> Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">
+                    Congelados
+                </td>
+                <td style="text-align: center;">
+                    Pizza Congelada
+                </td>
+                <td style="text-align: center;">
+                    SIM
+                </td>
+                <td align="center">
+                    10/12/2007
+                </td>
+                <td style="text-align: center;">
+                    NÃO
+                </td>
+                <td align="center">
+                    52
+                </td>
+                <td align="center">
+                    <input type="submit" value="Editar✏" id="Editar"/>
+                    <input type="reset" value= "Limpar🗞" id="Limpar" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    Hortifruti
+                </td>
+                <td style="text-align: center;">
+                    Banana Nanica
+                </td>
+                <td style="text-align: center;">
+                    NÃO
+                </td>
+                <td align="center">
+                    11/12/2007
+                </td>
+                <td style="text-align: center;">
+                    NÃO
+                </td>
+                <td align="center">
+                    98
+                </td>
+                <td align="center">
+                    <input type="submit" value="Editar✏" id="Editar"/>
+                    <input type="reset" value= "Limpar🗞" id="Limpar" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    Laticínios
+                </td>
+                <td style="text-align: center;">
+                    Leite Longa Vida 1 L
+                </td>
+                <td style="text-align: center;">
+                    SIM
+                </td>
+                <td align="center">
+                    30/12/2007
+                </td>
+                <td style="text-align: center;">
+                   SIM
+                </td>
+                <td align="center">
+                    103
+                </td>
+                <td align="center">
+                    <input type="submit" value="Editar✏" id="Editar"/>
+                    <input type="reset" value= "Limpar🗞" id="Limpar" />
+                </td>
+            </tr>
+            
+        </tbody>
+        
+    </table>
+    
+    </section>
+    </div>
+    
+        </div>
+        <footer>
+            <p class="rodape"> FATEC Itu Todos os Direitos Reservados 2023</p>
+        </footer>
+            </div>
+  </body>
+</html> 
